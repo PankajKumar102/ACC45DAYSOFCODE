@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int N,T,i,d,count=0;
+    
+    cin>>T;
+    
+    
+    for(d=0;d<T;d++)
+    {
+        cin>>N;
+        int arr[N];
+        
+        for(i=0;i<N;i++)
+        {
+            cin>>arr[i];
+            
+            if(arr[i]>=1000)
+            {
+                count=count+1;
+            }
+        }
+        cout<<count<<endl;
+        
+        count=0;
+    }
+    
+    return 0;
+}
